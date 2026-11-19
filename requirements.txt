@@ -1,0 +1,4 @@
+streamlink>=7.0
+yt-dlp
+faster-whisper>=1.1.0
+numpy

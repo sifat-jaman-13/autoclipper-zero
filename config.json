@@ -1,0 +1,16 @@
+{
+  "channel_url": "https://www.twitch.tv/zerkaa",
+  "source_mode": "vods",
+  "quality": "1080p60,1080p,best",
+  "segment_minutes": 5,
+  "clip_seconds": 42,
+  "clips_per_segment": 2,
+  "vod_count": 2,
+  "max_clips_per_vod": 12,
+  "whisper_model": "medium",
+  "whisper_device": "cuda",
+  "ollama_url": "http://127.0.0.1:11434",
+  "ollama_model": "qwen3.5:4b",
+  "retention_hours": 48,
+  "language": "en"
+}
