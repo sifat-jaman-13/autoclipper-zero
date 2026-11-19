@@ -6,7 +6,7 @@ AutoClipper Zero turns Twitch live streams and past broadcasts into captioned, u
 
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/license-not%20specified-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ## What it does
 
@@ -108,6 +108,14 @@ For a first run on CPU, choose `small` and `cpu`. For a CUDA-enabled machine, `m
 ## Responsible use
 
 Only record, edit, and redistribute content you have permission to use. Respect Twitch's terms, the broadcaster's rules, music and game-content rights, and any applicable platform policies. AutoClipper Zero creates drafts for review; it does not decide what you are legally allowed to publish.
+
+## Credits
+
+Created by **Sifat Jaman** with development and documentation assistance from **ChatGPT**.
+
+## License
+
+AutoClipper Zero is released under the [MIT License](LICENSE).
 
 ## Project structure
 
