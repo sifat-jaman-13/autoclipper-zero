@@ -177,7 +177,7 @@ Most settings can be changed in the desktop app. They are saved to `config.json`
 | `vod_count` | Number of recent archived broadcasts to scan | `2` |
 | `max_clips_per_vod` | Per-broadcast clip cap; `0` means unlimited | `12` |
 | `whisper_model` | `small`, `medium`, `large-v3-turbo`, or `large-v3` | `medium` |
-| `whisper_device` | `auto`, `cpu`, or `cuda` | `auto` in the application defaults |
+| `whisper_device` | `auto`, `cpu`, or `cuda` | `cuda` in the checked-in config; `auto` in the code fallback |
 | `ollama_url` | Local Ollama API endpoint | `http://127.0.0.1:11434` |
 | `ollama_model` | Local model used for ranking | `qwen3.5:4b` |
 | `retention_hours` | Age threshold for cleanup of processed live recordings | `48` |
