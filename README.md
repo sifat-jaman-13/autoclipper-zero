@@ -6,6 +6,8 @@
 
 AutoClipper Zero turns Twitch live streams and past broadcasts into captioned, upload-ready vertical clips. It runs locally on Windows, keeps its working data on your machine, and never publishes anything automatically.
 
+![AutoClipper Zero running on Windows](docs/assets/autoclipper-zero-desktop.png)
+
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D4?logo=windows&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
