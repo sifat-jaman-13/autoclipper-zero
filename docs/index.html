@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="AutoClipper Zero is a free, open-source Windows AI Twitch clip maker. Turn Twitch streams and VODs into vertical highlight clips with Whisper transcription, AI moment scoring and animated captions.">
+  <meta name="keywords" content="AI Twitch clip maker, Twitch clip generator, Twitch VOD highlights, automatic Twitch clips, stream highlights, vertical video clips, animated captions, open source video clipper">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AutoClipper Zero — AI Twitch Clip Maker & Highlight Generator">
+  <meta property="og:description" content="Turn Twitch streams and VODs into upload-ready vertical highlight clips on your Windows PC. Local-first, AI-assisted and open source.">
+  <meta property="og:image" content="https://sifat-jaman-13.github.io/autoclipper-zero/assets/autoclipper-zero-desktop.png">
+  <meta property="og:url" content="https://sifat-jaman-13.github.io/autoclipper-zero/">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>AutoClipper Zero — AI Twitch Clip Maker & Highlight Generator</title>
+  <link rel="canonical" href="https://sifat-jaman-13.github.io/autoclipper-zero/">
+  <style>
+    :root{color-scheme:dark;--bg:#090e1a;--panel:#111a2b;--muted:#9ba9bf;--text:#f4f7fc;--accent:#9a72ff;--cyan:#48d7cf;--line:#26334a}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#25204b 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{font-weight:800;letter-spacing:-.04em;font-size:19px}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px}
+    .hero{padding:96px 0 72px;max-width:850px}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #8d75e755;background:#9a72ff16;color:#c9baff;border-radius:99px;padding:7px 13px;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 14px var(--cyan)}
+    h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-.065em;margin:25px 0 20px}.gradient{background:linear-gradient(100deg,#bba5ff,#61e2dc);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:19px;color:#b5c1d3;max-width:720px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;padding:12px 19px;border-radius:12px;font-weight:750;background:linear-gradient(110deg,#9a72ff,#6b8dff);color:white;box-shadow:0 10px 35px #7858ed35}.btn.secondary{background:#172238;border:1px solid var(--line);box-shadow:none}
+    .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.chip{font-size:12px;color:#bdc8d8;border:1px solid var(--line);background:#ffffff06;border-radius:8px;padding:6px 10px}
+    section{padding:54px 0}.section-head{max-width:700px;margin-bottom:25px}h2{font-size:clamp(28px,4vw,40px);line-height:1.12;letter-spacing:-.045em;margin:0 0 12px}.sub{color:var(--muted);margin:0}.shot{padding:10px;border:1px solid #3b4961;border-radius:19px;background:linear-gradient(140deg,#1a2740,#0c1322);box-shadow:0 30px 90px #0008}.shot img{display:block;width:100%;height:auto;border-radius:11px;background:#111827}.shot-note{text-align:center;color:#93a4bc;font-size:12px;margin:11px 0 2px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.feature{padding:22px;border:1px solid var(--line);background:linear-gradient(145deg,#131e31,#0e1625);border-radius:16px}.icon{font-size:22px}.feature h3{margin:12px 0 6px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:14px}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{border-top:2px solid #8065dc;padding:15px 4px}.step b{display:block;margin-bottom:5px}.step span{color:var(--muted);font-size:14px}
+    .callout{padding:30px;border:1px solid #3a3c67;border-radius:18px;background:linear-gradient(120deg,#201c43,#122637)}.callout p{color:#bdc8da;margin:7px 0 18px}
+    footer{padding:35px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){.navlinks{gap:12px}.navlinks a:nth-child(2){display:none}.hero{padding:70px 0 45px}.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.lead{font-size:17px}}
+  </style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="./">AUTOCLIPPER <span>ZERO</span></a>
+  <nav class="navlinks" aria-label="Main navigation"><a href="#demo">App preview</a><a href="#features">Features</a><a href="#workflow">How it works</a><a href="https://github.com/sifat-jaman-13/autoclipper-zero">GitHub ↗</a></nav>
+</header>
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow"><i class="dot"></i> Open-source · Windows · Local-first</div>
+      <h1>Your Twitch stream.<br><span class="gradient">AI-picked highlights.</span></h1>
+      <p class="lead"><strong>AutoClipper Zero</strong> is an AI-assisted Twitch clip maker that turns live streams and past broadcasts into captioned, upload-ready vertical videos—right on your Windows PC.</p>
+      <div class="actions"><a class="btn" href="https://github.com/sifat-jaman-13/autoclipper-zero/releases">Get AutoClipper Zero</a><a class="btn secondary" href="https://github.com/sifat-jaman-13/autoclipper-zero">Explore source code ↗</a></div>
+      <div class="chips"><span class="chip">Twitch VOD & live capture</span><span class="chip">Whisper transcription</span><span class="chip">Local AI highlight scoring</span><span class="chip">1080 × 1920 clips</span><span class="chip">Animated captions</span></div>
+    </section>
+
+    <section id="demo">
+      <div class="section-head"><h2>See the actual desktop app</h2><p class="sub">A real screenshot captured from AutoClipper Zero running on a Windows desktop—not a concept render or a recreated interface.</p></div>
+      <div class="shot"><img src="./assets/autoclipper-zero-desktop.png" alt="Actual AutoClipper Zero Windows desktop app showing Twitch source settings, local AI controls, ready-to-upload clips and activity log" loading="lazy"><p class="shot-note">AutoClipper Zero · Windows desktop application</p></div>
+    </section>
+
+    <section id="features">
+      <div class="section-head"><h2>From long broadcasts to short-form clips</h2><p class="sub">A local-first workflow built for streamers and editors who want to find moments worth sharing.</p></div>
+      <div class="grid">
+        <article class="feature"><div class="icon">🎮</div><h3>Capture Twitch content</h3><p>Watch a channel's recent VODs, process one broadcast link, or record a live stream in manageable segments.</p></article>
+        <article class="feature"><div class="icon">🎙️</div><h3>Transcribe with Whisper</h3><p>Use faster-whisper for speech transcription, with CUDA acceleration when available and CPU fallback.</p></article>
+        <article class="feature"><div class="icon">🧠</div><h3>Find standout moments</h3><p>Score candidate highlights with a local Ollama model, or use the built-in heuristic scorer when Ollama is offline.</p></article>
+        <article class="feature"><div class="icon">📱</div><h3>Vertical 9:16 video</h3><p>Render full-screen 1080 × 1920 MP4 clips designed for Shorts, Reels and TikTok-style feeds.</p></article>
+        <article class="feature"><div class="icon">💬</div><h3>Animated captions</h3><p>Burn karaoke-style word-highlighted captions into each finished clip.</p></article>
+        <article class="feature"><div class="icon">🗂️</div><h3>Keep control of publishing</h3><p>Save MP4 clips and matching title, description and hashtag notes locally. Review everything before you publish.</p></article>
+      </div>
+    </section>
+
+    <section id="workflow">
+      <div class="section-head"><h2>How the clip generator works</h2><p class="sub">An end-to-end highlight pipeline, running on your own machine.</p></div>
+      <div class="steps">
+        <div class="step"><b>01 · Capture</b><span>Streamlink and FFmpeg collect Twitch VOD or live segments.</span></div>
+        <div class="step"><b>02 · Understand</b><span>faster-whisper transcribes speech and measures audio activity.</span></div>
+        <div class="step"><b>03 · Select</b><span>Ollama or local scoring ranks candidate highlight moments.</span></div>
+        <div class="step"><b>04 · Render</b><span>FFmpeg creates vertical MP4s with animated captions and upload notes.</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="callout"><h2>Made for creators who want control.</h2><p>AutoClipper Zero creates local drafts. It does not connect social accounts or publish videos automatically. You choose what to review and share.</p><a class="btn" href="https://github.com/sifat-jaman-13/autoclipper-zero">View the project on GitHub ↗</a></div>
+    </section>
+  </div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 AutoClipper Zero · Created by Sifat Jaman · MIT License</span><span><a href="https://github.com/sifat-jaman-13/autoclipper-zero">Source code</a> · <a href="https://github.com/sifat-jaman-13/autoclipper-zero/blob/main/README.md">Documentation</a></span></div></footer>
+</body>
+</html>
