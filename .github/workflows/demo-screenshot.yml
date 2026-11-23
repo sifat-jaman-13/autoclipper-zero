@@ -91,22 +91,21 @@ jobs:
         run: |
           Get-Process python -ErrorAction SilentlyContinue | Where-Object { $_.Path -like "*\Python312\*" } | Stop-Process -Force -ErrorAction SilentlyContinue
 
-      - name: Commit the genuine desktop screenshot
+      - name: Commit or refresh the genuine desktop screenshot
         shell: pwsh
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin main
-          $existing = git ls-tree -r --name-only origin/main docs/assets/autoclipper-zero-desktop.png
-          if ($existing -eq "docs/assets/autoclipper-zero-desktop.png") {
-            git checkout origin/main -- docs/assets/autoclipper-zero-desktop.png
-            Write-Host "A genuine desktop screenshot is already committed; no duplicate commit is needed."
+          git add docs/assets/autoclipper-zero-desktop.png
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "The captured desktop screenshot is unchanged; no commit is needed."
           } else {
-            git add docs/assets/autoclipper-zero-desktop.png
-            git commit -m "Add screenshot of the running AutoClipper Zero desktop app"
+            git commit -m "Refresh screenshot of the running AutoClipper Zero desktop app"
             if ($LASTEXITCODE -ne 0) { throw "Could not commit the screenshot." }
-            git pull --rebase origin main
+            git rebase origin/main
             if ($LASTEXITCODE -ne 0) { throw "Could not rebase screenshot commit onto latest main." }
-            git push
-            if ($LASTEXITCODE -ne 0) { throw "Could not push screenshot commit." }
+            git push origin HEAD:main
+            if ($LASTEXITCODE -ne 0) { throw "Could not push screenshot update." }
           }
